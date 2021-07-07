@@ -1,0 +1,242 @@
+body    {
+    margin: 0;
+    text-align: center;
+    font-family: cursive;
+    color: lightskyblue;
+    vertical-align: middle;
+}
+
+#container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+
+.main {
+    display: grid;
+    justify-content: start;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 250px 300px 80px 80px 80px 40px;
+
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+
+.item1  {
+    background-color: white;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+
+.item2 {
+    background-color: white;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.item3 {
+    background-color: yellow;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.item4 {
+    background-color: cyan;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.item5 {
+    background-color: lime;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.item6 {
+    background-color: magenta;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+.item7 {
+    background-color: red;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+.item8 {
+    background-color: blue;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
+.item9  {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+
+
+.item10 {
+    background-color: blue;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.item11 {
+    background-color: magenta;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.item12 {
+    background-color: yellow;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.item13 {
+    background-color: red;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.item14 {
+    background-color: cyan;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+.item15 {
+    background-color: black;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+.item16 {
+    background-color: white;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+.item17 {
+    background-color: white;
+
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    background-image: linear-gradient(to left, black, white);
+}
+.item18 {
+    background-color: white;
+
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 8;
+
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.item19 {
+    background-color: white;
+
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    /* Hier Gradient in blokken */
+    background-image:
+            linear-gradient(
+                    to right,
+                    #000000,
+                    #000000 10%,
+                    #1a1a1a 10%,
+                    #1a1a1a 20%,
+                    #333333 20%,
+                    #333333 30%,
+                    #4d4d4d 30%,
+                    #4d4d4d 40%,
+                    #666666 40%,
+                    #666666 50%,
+                    #808080 50%,
+                    #808080 60%,
+                    #999999 60%,
+                    #999999 70%,
+                    #b3b3b3 70%,
+                    #b3b3b3 80%,
+                    #cccccc 80%,
+                    #cccccc 90%,
+                    #e6e6e6 90%,
+                    #e6e6e6 100%,
+                    #ffffff
+            );
+}
+
+.item20 {
+    background-color: black;
+
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+
+.item21 {
+    background-color: white;
+    border: 0 solid black;
+
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
